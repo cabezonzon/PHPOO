@@ -42,7 +42,7 @@
     }
     
     $loteria = new Loteria(10,10);
-    $loteria->sortear();
+    //$loteria->sortear();
 
 ?>
 
