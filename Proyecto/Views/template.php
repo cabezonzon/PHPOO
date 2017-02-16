@@ -36,6 +36,13 @@
                                 <li><a href="<?php echo URL; ?>secciones/agregar">Agregar</a></li>
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" >Secciones</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="<?php echo URL; ?>secciones">Listado</a></li>
+                                <li><a href="<?php echo URL; ?>secciones/agregar">Agregar</a></li>
+                            </ul>
+                        </li>
                     </ul>    
                     
                     <ul class="nav navbar-nav navbar-right">
