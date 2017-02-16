@@ -17,7 +17,7 @@
         <nav class="navbar navbar-inverse navbar navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapse">
+                    <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#bs-example-navbar">
                         <span class="sr-only"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -30,14 +30,14 @@
                     <ul class="nav navbar-nav">
                         <li><a href="<?php echo URL; ?>">Inicio</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" >Estudiante</a>
+                            <a href="#" class="btn btn-default dropdown-toggle btn btn-primary" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Estudiante</a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="<?php echo URL; ?>secciones">Listado</a></li>
-                                <li><a href="<?php echo URL; ?>secciones/agregar">Agregar</a></li>
+                                <li><a href="<?php echo URL; ?>estudiantes">Listado</a></li>
+                                <li><a href="<?php echo URL; ?>estudiantes/agregar">Agregar</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" >Secciones</a>
+                            <a href="#" class="btn btn-default dropdown-toggle btn btn-primary" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Secciones</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="<?php echo URL; ?>secciones">Listado</a></li>
                                 <li><a href="<?php echo URL; ?>secciones/agregar">Agregar</a></li>
@@ -48,7 +48,9 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="http://codigofacilito.com">SoloPermutas</a></li>
                     </ul>
-                </div>    
+                </div>
+                
+  
             </div>
         </nav>    
                 
@@ -64,7 +66,7 @@
             Matias Ballesteros | <b>SoloPermutas</b>
         </footer>
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="<?php echo URL; ?>Views/template/js/bootstrap.js"></script>
+        <script src="<?php echo URL; ?>Views/Template/js/bootstrap.js"></script>
     </body>
     </html>
         
