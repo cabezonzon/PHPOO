@@ -16,9 +16,9 @@
                 $mostrar = "Controllers\\".$controlador;
                 $controlador = new $mostrar;
                 if(!isset($arugmento)){
-                    call_user_func(array($controlador, $metodo));
+                    $datos = call_user_func(array($controlador, $metodo));
                 }else{
-                    call_user_func_array(array($controlador, $metodo), $arugmento);
+                    $datos = call_user_func_array(array($controlador, $metodo), $arugmento);
                 }
             }
         //cargar vista
