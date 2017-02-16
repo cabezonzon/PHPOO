@@ -18,7 +18,7 @@
         
         public function listar(){
             $sql = "SELECT * FROM secciones";
-            $this->con->consultaRetorno($sql);
+            $datos = $this->con->consultaRetorno($sql);
             return $datos;
         }
         
