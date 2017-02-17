@@ -43,6 +43,13 @@
             
             
         }
+        
+        
+        public function editar($id) {
+            $this->estudiante->set("id", $id);
+            $datos = $this->estudiante->view();
+            return $datos;
+        }
     }
     
     
