@@ -12,6 +12,15 @@ use Models\Seccion as Seccion;
            $datos = $this->secciones->listar();
            return $datos;
         }
+        
+        public function agregar() {
+            if($_POST){
+                $this->secciones->set("nombre", $_POST['nombre']);
+                $this->secciones->add();
+                header('Location: '.URL."secciones");
+                        
+            }
+        }
     }
 
 
