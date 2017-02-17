@@ -31,7 +31,7 @@
         }
         
         public function add() {
-            $sql = "INSERT INTO estudiantes(id,nombre,edad,promedio,imagen,id_seccion,fecha)"
+            $sql = "INSERT INTO estudiantes(id,nombre,edad,promedio,imagen,id_secciones,fecha)"
                     . "VALUES (null,'{$this->nombre}','{$this->edad}','{$this->promedio}',"
                     . "'{$this->imagen}','{$this->id_seccion}',NOW())";
             $this->con->consultaSimple($sql);
