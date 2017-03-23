@@ -43,8 +43,8 @@
         }
         
         public function edit() {
-            $sql = "UPDATE estudiantes SET nombre = '$this->nombre', edad = '$this->nombre',"
-                    . "promedio = '$this->promedio', id_seccion = '$this->id_seccion' where id = '{$this->id}'";
+            $sql = "UPDATE estudiantes SET nombre = '$this->nombre', edad = '$this->edad',
+                    promedio = '$this->promedio', id_secciones = '$this->id_seccion' where id = '{$this->id}'";
             $this->con->consultaSimple($sql);
         }
         
