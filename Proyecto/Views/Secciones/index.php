@@ -21,8 +21,8 @@
                         <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['nombre']; ?></td>
                        
-                        <td><a class="btn btn-warning" href="<?php echo URL; ?>estudiantes/editar/<?php echo $row['id'];?>">Editar</a>
-                            <a class="btn btn-danger" href="<?php echo URL; ?>estudiantes/eliminiar/<?php echo $row['id'];?>">Eliminar</a></td>
+                        <td><a class="btn btn-warning" href="<?php echo URL; ?>secciones/editar/<?php echo $row['id'];?>">Editar</a>
+                            <a class="btn btn-danger" href="<?php echo URL; ?>secciones/eliminar/<?php echo $row['id'];?>">Eliminar</a></td>
                      </tr>
                     <?php } ?>  
                     

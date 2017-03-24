@@ -64,6 +64,18 @@
             $datos = $this->seccion->listar();
             return $datos;
         }
+        
+        public function ver($id){
+            $this->estudiante->set("id", $id);
+            $datos = $this->estudiante->view();
+            return $datos;
+        }
+        
+        public function eliminar($id){
+            $this->estudiante->set("id", $id);
+            $this->estudiante->delete();
+            header("Location: ".URL."estudiantes");
+        }
        
     }
     

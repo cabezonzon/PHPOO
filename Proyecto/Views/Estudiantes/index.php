@@ -21,12 +21,12 @@
                     <?php while($row = mysqli_fetch_array($datos)){ ?>
                      <tr>
                         <th><img class="imagen-avatar" src="<?php echo URL; ?>Views/template/imagenes/<?php echo $row['imagen']; ?>"></th>
-                        <td><?php echo $row['nombre']; ?></td>
+                        <td><a href="<?php echo URL; ?>estudiantes/ver/<?php echo $row['id']; ?>"><?php echo $row['nombre']; ?></a></td>
                         <td><?php echo $row['edad']; ?></td>
                         <td><?php echo $row['nombre_seccion']; ?></td>
                         <td><?php echo $row['promedio']; ?></td>
                         <td><a class="btn btn-warning" href="<?php echo URL; ?>estudiantes/editar/<?php echo $row['id'];?>">Editar</a>
-                            <a class="btn btn-danger" href="<?php echo URL; ?>estudiantes/eliminiar/<?php echo $row['id'];?>">Eliminar</a></td>
+                            <a class="btn btn-danger" href="<?php echo URL; ?>estudiantes/eliminar/<?php echo $row['id'];?>">Eliminar</a></td>
                      </tr>
                     <?php } ?>  
                     

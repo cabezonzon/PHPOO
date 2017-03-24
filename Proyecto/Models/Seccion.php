@@ -33,12 +33,12 @@
         }
         
         public function edit() {
-            $sql = "UPDATE FROM secciones SET nombre='{$this->nombre}' WHERE id = '{$this->id}'";
+            $sql = "UPDATE secciones SET nombre='{$this->nombre}' WHERE id = '{$this->id}'";
             $this->con->consultaSimple($sql);
         }
         
         public function view() {
-            $sql = "SELECT * FROM secciones WHERE id = '$this->id'";
+            $sql = "SELECT * FROM secciones WHERE id = '{$this->id}'";
             $datos = $this->con->consultaRetorno($sql);
             $row = mysql_fetch_assoc($datos);
             return $row;
